@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/test-timer-react/static/css/main.9a5c16e1.css",
+    "main.js": "/test-timer-react/static/js/main.a8c52550.js",
+    "static/js/787.8e9e615b.chunk.js": "/test-timer-react/static/js/787.8e9e615b.chunk.js",
+    "index.html": "/test-timer-react/index.html",
+    "main.9a5c16e1.css.map": "/test-timer-react/static/css/main.9a5c16e1.css.map",
+    "main.a8c52550.js.map": "/test-timer-react/static/js/main.a8c52550.js.map",
+    "787.8e9e615b.chunk.js.map": "/test-timer-react/static/js/787.8e9e615b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a5c16e1.css",
+    "static/js/main.a8c52550.js"
+  ]
+}
