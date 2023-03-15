@@ -70,11 +70,11 @@ function Timer() {
         <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
         <div>
         <br />
-        <button onClick={startTimer}>시작</button>
+        <button onClick={startTimer} class="w-btn w-btn-indigo">시작</button>
         <label>   </label>
-        <button onClick={stopTimer}>정지</button>
+        <button onClick={stopTimer} class="w-btn w-btn-indigo">정지</button>
         <label>   </label>
-        <button onClick={resetTimer}>초기화</button>
+        <button onClick={resetTimer} class="w-btn w-btn-indigo">초기화</button>
         </div>
       </div>
       
