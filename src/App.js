@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import './App.css';
 
-function Timer({ minutes = 3, seconds = 0 }) {
+function Timer() {
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   const [timeLeft, setTimeLeft] = useState(minutes * 60 + seconds);
   const [timerRunning, setTimerRunning] = useState(false);
 
@@ -33,20 +33,44 @@ function Timer({ minutes = 3, seconds = 0 }) {
     setTimerRunning(false);
   };
 
+  const handleMinutesChange = e => {
+    setMinutes(parseInt(e.target.value));
+  };
+
+  const handleSecondsChange = e => {
+    setSeconds(parseInt(e.target.value));
+  };
+
   const minutesDisplay = Math.floor(timeLeft / 60)
     .toString()
     .padStart(2, '0');
   const secondsDisplay = (timeLeft % 60).toString().padStart(2, '0');
 
   return (
-    <div className="ComponentBox">
-      <h1>{<div>{`${minutesDisplay}:${secondsDisplay}`}</div>}</h1>
+    <div>
       <div>
-        <button variant="primary" onClick={startTimer}>시작</button>
-        <text>    </text>
-        <button variant="danger" onClick={stopTimer}>정지</button>
-        <text>    </text>
-        <button variant="info" onClick={resetTimer}>초기화</button>
+        <label htmlFor="minutes-input">분:</label>
+        <input
+          id="minutes-input"
+          type="number"
+          value={minutes}
+          onChange={handleMinutesChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="seconds-input">초:</label>
+        <input
+          id="seconds-input"
+          type="number"
+          value={seconds}
+          onChange={handleSecondsChange}
+        />
+      </div>
+      <div>{`${minutesDisplay}:${secondsDisplay}`}</div>
+      <div>
+        <button onClick={startTimer}>시작</button>
+        <button onClick={stopTimer}>정지</button>
+        <button onClick={resetTimer}>초기화</button>
       </div>
     </div>
   );
