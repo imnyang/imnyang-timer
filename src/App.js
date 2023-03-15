@@ -69,7 +69,7 @@ function Timer() {
       <div className="ComponentBox">
         <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
         <div>
-          <label>\\n</label>
+          <br />
           <button onClick={startTimer}>시작</button>
           <label>   </label>
           <button onClick={stopTimer}>정지</button>
