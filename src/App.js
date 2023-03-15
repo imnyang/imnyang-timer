@@ -70,6 +70,8 @@ function Timer() {
         <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
         <div>
         <br />
+        <br />
+        <br />
         <button onClick={startTimer} class="w-btn w-btn-indigo">시작</button>
         <label>   </label>
         <button onClick={stopTimer} class="w-btn w-btn-indigo">정지</button>
