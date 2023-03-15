@@ -68,14 +68,14 @@ function Timer() {
       </div>
       <div className="ComponentBox">
         <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
-        <div>
-          <br />
-          <button onClick={startTimer}>시작</button>
-          <label>   </label>
-          <button onClick={stopTimer}>정지</button>
-          <label>   </label>
-          <button onClick={resetTimer}>초기화</button>
-        </div>
+      </div>
+      <div className="ComponentBox">
+        <br />
+        <button onClick={startTimer}>시작</button>
+        <label>   </label>
+        <button onClick={stopTimer}>정지</button>
+        <label>   </label>
+        <button onClick={resetTimer}>초기화</button>
       </div>
       
     </div>
