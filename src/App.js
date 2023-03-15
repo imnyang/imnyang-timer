@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
-function Timer() {
+function Timer({ minutes = 3, seconds = 0}) {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [timeLeft, setTimeLeft] = useState(minutes * 60 + seconds);
