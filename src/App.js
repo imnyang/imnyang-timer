@@ -66,8 +66,8 @@ function Timer() {
           onChange={handleSecondsChange}
         />
       </div>
-      <div><h1 style="fontsize: 50pt">{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
-      <div className="ComponentBox">
+      <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
+      <div>
         <button onClick={startTimer}>시작</button>
         <button onClick={stopTimer}>정지</button>
         <button onClick={resetTimer}>초기화</button>
