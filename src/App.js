@@ -47,7 +47,7 @@ function Timer() {
   const secondsDisplay = (timeLeft % 60).toString().padStart(2, '0');
 
   return (
-    <div className="ComponentBox">
+    <div>
       <div>
         <label htmlFor="minutes-input">분:</label>
         <input
@@ -66,12 +66,15 @@ function Timer() {
           onChange={handleSecondsChange}
         />
       </div>
-      <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
-      <div>
-        <button onClick={startTimer}>시작</button>
-        <button onClick={stopTimer}>정지</button>
-        <button onClick={resetTimer}>초기화</button>
+      <div className="ComponentBox">
+        <div><h1>{`${minutesDisplay}:${secondsDisplay}`}</h1></div>
+        <div>
+          <button onClick={startTimer}>시작</button>
+          <button onClick={stopTimer}>정지</button>
+          <button onClick={resetTimer}>초기화</button>
+        </div>
       </div>
+      
     </div>
   );
 }
