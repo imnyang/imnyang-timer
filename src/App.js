@@ -50,7 +50,6 @@ function Timer() {
   return (
     <div>
       <div>
-        <label htmlFor="minutes-input">분:</label>
         <input
           id="minutes-input"
           type="number"
@@ -58,7 +57,7 @@ function Timer() {
           class="inputField"
           onChange={handleMinutesChange}
         />
-        <label htmlFor="seconds-input">:</label>
+        <label htmlFor="seconds-input"> : </label>
         <input
           id="seconds-input"
           type="number"
