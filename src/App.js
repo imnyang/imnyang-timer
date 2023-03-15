@@ -55,6 +55,7 @@ function Timer() {
           id="minutes-input"
           type="number"
           value={minutes}
+          class="inputField"
           onChange={handleMinutesChange}
         />
       </div>
@@ -64,6 +65,7 @@ function Timer() {
           id="seconds-input"
           type="number"
           value={seconds}
+          class="inputField"
           onChange={handleSecondsChange}
         />
       </div>
