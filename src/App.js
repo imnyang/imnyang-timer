@@ -76,8 +76,6 @@ function Timer() {
         <button onClick={resetTimer} class="w-btn w-btn-indigo">초기화</button>
         <br/>
         <label className='text'>분:초 형태로 시간을 변경후 초기화를 한번 눌러주세요.</label>
-        <br/>
-        <label className="text">Made By 남현석</label>
         </div>
 
       </div>
